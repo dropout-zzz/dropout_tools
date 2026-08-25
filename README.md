@@ -46,6 +46,14 @@ To be able to use `apt`, you'll need to write these lines in your `/etc/apt/apt.
 APT::Sandbox::User "";
 ```
 
+You may want to add these in your shell profile (for example, `.bash_profile`):
+
+```shell
+export PATH
+```
+
+This is to workaround the fact that `dropout_chroot` lacks support to run a real `login` program.
+
 ##### Installing Arch Linux
 
 You'd download "bootstrap tarball" from [download page](https://archlinux.org/download/).
